@@ -1,0 +1,12 @@
+extends layout
+block content
+    section
+        h1 Posts
+        div.posts-container
+            if(posts != undefined && posts.length > 0)
+                each post in posts
+                    div.post
+                        p.title=post.title
+                        span=post.User.dataValues.email
+                        a(href="/post/" + post.id)
+                            div(class="cover" style='background-image: url("' + post.covername + '")')   

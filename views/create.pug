@@ -1,0 +1,16 @@
+extends layout
+block content
+    section.container
+        h1 Create a new post
+        
+        form(action="/create" enctype="multipart/form-data" method="POST" )
+            label(for="title") Post Title
+            input(type="text" name="title" required)
+
+            label(for="content") Post Content
+            textarea(name="content" required)
+
+            label(for="cover" class="cover") Post Cover
+            input(type="file" id="cover" name="cover" required)
+            
+            input(type="submit" value="Create")

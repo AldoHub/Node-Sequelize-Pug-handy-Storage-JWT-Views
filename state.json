@@ -1,0 +1,54 @@
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWxkb2NhYXZhQGhvdG1haWwuY29tIiwiaWF0IjoxNjIyNDkyMDgwLCJleHAiOjE2MjI0OTkyODB9.Ki5AkQdRIM1wB_I-d370BdSk51jLkMAOH2Rrz_MFjeI",
+    "user": {
+        "id": 1,
+        "email": "aldocaava@hotmail.com",
+        "password": "$2b$10$/1e1uxK7q8R6aUVS7fbdae9zpPrB2p59hCHtmaN.jSVZ/m9i03ZTC",
+        "avatarUrl": "avatar-1611867205024.jpg",
+        "avatarname": "avatar-1611867205024.jpg",
+        "createdAt": "2021-01-28T20:53:25.000Z",
+        "updatedAt": "2021-01-28T20:53:25.000Z",
+        "Posts": [
+            {
+                "id": 12,
+                "title": "fqfqf",
+                "content": "wqfgqwfqfq",
+                "coverUrl": "http://localhost:4000/covers/cover-1622144342303.jpg",
+                "covername": "cover-1622144342303.jpg",
+                "createdAt": "2021-05-27T19:39:02.000Z",
+                "updatedAt": "2021-05-27T19:39:02.000Z",
+                "UserId": 1
+            },
+            {
+                "id": 15,
+                "title": "dqfq",
+                "content": "fqfqfqfqf",
+                "coverUrl": "http://localhost:4000/covers/cover-1622145076338.jpg",
+                "covername": "cover-1622145076338.jpg",
+                "createdAt": "2021-05-27T19:51:16.000Z",
+                "updatedAt": "2021-05-27T19:51:16.000Z",
+                "UserId": 1
+            },
+            {
+                "id": 16,
+                "title": "dqdqwdq",
+                "content": "fwqfqwffq",
+                "coverUrl": "http://localhost:4000/covers/cover-1622146574439.jpg",
+                "covername": "cover-1622146574439.jpg",
+                "createdAt": "2021-05-27T20:16:14.000Z",
+                "updatedAt": "2021-05-27T20:16:14.000Z",
+                "UserId": 1
+            },
+            {
+                "id": 17,
+                "title": "ddqddqd",
+                "content": "dqdqdqddqd",
+                "coverUrl": "http://localhost:4000/covers/cover-1622146593119.jpg",
+                "covername": "cover-1622146593119.jpg",
+                "createdAt": "2021-05-27T20:16:33.000Z",
+                "updatedAt": "2021-05-27T20:16:33.000Z",
+                "UserId": 1
+            }
+        ]
+    }
+}

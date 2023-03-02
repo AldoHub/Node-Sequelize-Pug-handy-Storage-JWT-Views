@@ -1,0 +1,27 @@
+extends layout
+block content
+    section
+     div.single
+      h1=post.title
+      span=post.User.dataValues.email
+      img(src=`./../${post.covername}`)
+      div=post.content
+     
+        if(post.User.dataValues.email == user)
+          br
+          button(id="editPost") Edit Post
+          div.updateForm
+          form(action=`/post/edit/${post.id}` enctype="multipart/form-data" method="POST")
+            label(for="title") Post Title
+            input(type="text" name="title" value=post.title required)
+
+            label(for="content") Post Content
+            textarea(name="content" required)=post.content
+
+            label(for="cover" class="cover") Post Cover
+            input(type="file" id="cover" name="cover")
+            input(type="hidden" id="imageUrl" name="imageUrl" value=post.covername)
+                
+            input(type="submit" value="Update") 
+          hr
+          a(id="delete" href=`/delete/${post.id}`) Remove Post    

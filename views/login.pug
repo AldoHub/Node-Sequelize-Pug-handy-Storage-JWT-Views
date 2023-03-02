@@ -1,0 +1,19 @@
+extends layout
+block content
+
+    section
+       h1 Welcome Back
+       if (err)
+            p.error= err
+       
+       if (success)
+            p.success=success   
+            
+       form(action="/auth/login" enctype="multipart/form-data" method="POST" )
+            label(for="email") Email
+            input(type="email" name="email" required)
+
+            label(for="Password") Password
+            input(type="password" name="password" required)
+          
+            input(type="submit" value="Submit")

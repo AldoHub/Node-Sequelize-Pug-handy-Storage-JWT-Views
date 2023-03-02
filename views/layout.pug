@@ -1,0 +1,35 @@
+doctype html
+html
+    head
+        title Node Posts with Sequelize
+        link(rel="stylesheet" href="/css/main.css")
+        link(href="https://fonts.googleapis.com/css?family=Poppins", rel="stylesheet")
+  
+    body
+        div
+           span(id="showMenu") &#9776;
+           span(id="siteTitle") Node &amp; Sequelize Posts        
+
+        nav
+            span(id="closeMenu") &times;
+            ul    
+            
+                li
+                    a(href="/") Home
+                
+                if(token == "")
+                    li
+                        a(href="/auth/register") Register
+                
+                    li
+                        a(href="/auth/login") Login  
+                else
+                    li
+                        a(href="/create") Create New
+                    li
+                        a(href="/auth/user/dashboard") My Dashboard
+                    li
+                        a(href="/auth/logout") LogOut            
+        div.container   
+            block content
+        script(src="/js/functions.js")    

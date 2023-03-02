@@ -1,0 +1,22 @@
+extends layout
+block content
+
+    section
+       h1 Register
+       if (err)
+            p.error= err
+       
+       if (success)
+            p.success=success   
+ 
+       form(action="/auth/register" enctype="multipart/form-data" method="POST" )
+            label(for="email") Email
+            input(type="email" name="email" required)
+
+            label(for="Password") Password
+            input(type="password" name="password" required)
+                        
+            label(for="avatar") your avatar
+            input(type="file" name="avatar" required)
+            
+            input(type="submit" value="Submit")
